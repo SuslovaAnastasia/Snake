@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Игра Змейка</title>
+    </head>
+    <body>
+    <div class="grid-container">
+        <div>
+        <p>
+            <h1 style="color:white">Счет: </h1>
+            <h1 class="scoreboard" style="color:white">0</h1>   
+        </p>   
+        <p>
+            <h1 style="color:white">Рекорд: </h1>
+            <h1 class="hi" style="color:white">0</h1>
+        </p>
+        </div>
+        <div class="wrapper">
+            <canvas width="400" height="400" id="game" onclick="restart(gameLoop);"></canvas>
+        </div>
+    </div>
+    <div class="div-only-mobile">
+            <button class="pause hide" onclick="pause()" class="pause">Play</button>
+        </div>
+    </div>
+    
+        <script src="snake.js"></script>
+    </body>
+</html>
